@@ -21,6 +21,7 @@ namespace BetterCouriers
             GameObject add_route = GameObject.Instantiate(configure_button);
             add_route.transform.parent = configure.transform;
             add_route.transform.localPosition = new Vector3(130, 0, 0);
+            add_route.transform.localScale = Vector3.one;
 
             Image img = add_route.GetComponent<Image>();
             img.rectTransform.sizeDelta = new Vector2(140, img.rectTransform.sizeDelta.y);
@@ -33,7 +34,6 @@ namespace BetterCouriers
             label.transform.localPosition = new Vector3(-16, 0, 0);
 
             TextMeshProUGUI text = label.GetComponent<TextMeshProUGUI>();
-            text.text = "Add route";
             text.DefferedSetText("Add route");
         }
 
