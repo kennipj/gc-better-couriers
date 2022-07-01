@@ -1,0 +1,12 @@
+# Visual Studio folder
+.vs/
+
+# User files
+*.user
+
+# Build folders
+[Bb]in/
+[Oo]bj/
+
+# NuGet packages
+**/packages/
